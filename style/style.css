@@ -1,0 +1,261 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Cabin);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+/* */
+
+body {
+    background: url(../imagens/anyta-moda.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+/**/
+/* header */
+
+header {
+    float: left;
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    float: left;
+    margin: 10px 0 8px 20px;
+}
+
+.logo h1 {
+    font-size: 38px;
+    display: inline;
+    margin-bottom: 0px;
+}
+
+.logo small {
+    font-family: 'Cabin', 'sans-serif';
+    font-size: 13px;
+    text-align: center;
+    float: right;
+}
+
+.login {
+    float: right;
+    margin-right: 20px;
+    text-align: center;
+    font-family: 'Cabin', 'sans-serif';
+    font-size: 16px;
+}
+
+.login p {
+    font-family: 'Poiret One', cursive;
+    border: 1px solid rgb(127, 127, 127);
+    padding: 8px;
+    margin: 3px -18px;
+    width: 65px;
+    -webkit-transition: all 1s;
+    /* Safari */
+    
+    transition: all 1s;
+    float: right;
+}
+
+.closebutton {
+    float: right;
+    font-size: 13px;
+    margin: 2px;
+    color: #667781;
+    display: none;
+    cursor: pointer;
+}
+
+.login input {
+    width: 100%;
+    margin: 2px 0;
+    color: #000000;
+    border: none;
+    padding: 7px 9px;
+    border-radius: 3px;
+}
+
+.login input:focus {
+    outline: none;
+}
+
+.login a:link,
+a:visited {
+    text-decoration: none;
+    color: #6d6c6c;
+}
+
+.login a:hover {
+    text-decoration: none;
+    color: #ddd7d7;
+}
+
+.login a:active {
+    text-decoration: none;
+}
+
+.loginbutton {
+    width: 113%;
+    border: none;
+    margin: 2px 0px 2px;
+    padding: 7px 9px;
+    border-radius: 3px;
+}
+
+.login form {
+    display: none;
+}
+/**/
+/* registration form */
+
+.regform {
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+}
+
+.container {
+    border: 3px dashed #FFF;
+    background-color: #69808B;
+    opacity: 0.9;
+    padding: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 31px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    display: block;
+    margin: 21px 45px;
+    padding: 3px;
+}
+
+.forms {
+    font-family: 'Poiret One', cursive;
+    font-size: 13px;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    margin: 20px;
+}
+
+.formgroup {
+    margin-bottom: 12px;
+    height: 55px;
+}
+
+.inputs {
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    color: #FFF;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    margin-top: 8px;
+    height: 18px;
+    margin-bottom: 7px;
+}
+
+.inputs:focus {
+    outline: none;
+}
+/**/
+/* Removes calendar pickers on the rigth*/
+
+.birthdate::-webkit-inner-spin-button,
+.birthdate::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.birthdate {
+    margin-top: 11px;
+}
+/**/
+/* sex form */
+
+.inlineblock label {
+    margin-right: 2px;
+    font-size: 16px;
+}
+
+.labelswidth {
+    margin-top: 27px;
+    display: none;
+}
+
+.buttonform {
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    border-width: 0px;
+    padding: 17px 72px;
+    float: right;
+    outline: 0;
+    margin: 10px 72px 33px 0;
+}
+/**/
+/* jquery validator */
+
+#errorContainer {
+    display: none;
+    overflow: auto;
+    background-color: #FFDDDD;
+    border: 1px solid #FF2323;
+    padding-top: 1;
+}
+
+#errorContainer label {
+    float: none;
+    width: auto;
+}
+
+label.error {
+    color: red;
+    font-size: 16px;
+    display: block;
+    text-align: right;
+}
+/**/
+/* call to action frases */
+
+.call_to_action {
+    vertical-align: bottom;
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.call_to_action p {
+    background-color: #69808B;
+    opacity: 0.9;
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    margin: 6px;
+    padding: 6px;
+}
+/**/
+/* footer */
+
+footer {
+    margin-top: 30px;
+    margin-left: 15px;
+    float: left;
+    clear: both;
+    font-family: 'Poiret One', cursive;
+    font-size: 14px;
+    font-weight: bolder;
+    color: black;
+    display: table-row;
+}

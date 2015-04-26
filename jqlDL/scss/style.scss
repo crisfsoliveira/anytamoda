@@ -1,0 +1,117 @@
+@import "compass/css3";
+
+$button-color: #3498db;
+$complete-color: #27ae60;
+ 
+html,body {
+ background-color: #feffff; 
+@include filter-gradient(#feffff, #a0d8ef, horizontal);
+@include background-image(radial-gradient(center, ellipse cover,  #feffff 0%,#ddf1f9 35%,#a0d8ef 100%));
+height: 100%;
+  font-family: 'Alef', sans-serif;
+  font-size: 10px; 
+  text-align:center;
+} 
+body {
+  font-size: 2rem;
+}
+
+h1 {
+  color: rgba(black, 0.6);
+  font-weight: 700;
+}
+
+@include placeholder();  
+
+form {
+  background: #a0d8ef;
+  margin: 2rem auto;
+  padding: 4rem;
+  width: 44rem;
+}
+
+input {
+  background: rgba(black, 0.2);
+  border: 0;
+  color: #fff;
+  display: block;
+  font-size: 3rem;
+  margin: 0 3rem; 
+  padding: 2rem;
+  width: 36rem;
+}
+
+label {
+  color: rgba(black, 0.6);
+}
+
+/*  Submit Button */
+
+.submit {
+  background: $button-color;
+  border: 0;
+  color: #fff;
+  font-size: 3rem;
+  height: 6rem;
+  line-height: 2;
+  margin: 2rem auto 0 ;
+  position: relative;
+  top: 1rem;
+  width: 18rem;    
+  
+  &:before {
+      content: 'Send';
+      position: relative;
+      z-index: 999;
+    }
+}
+
+.complete {
+  height: 6rem;
+  overflow: hidden; 
+  width: 18rem;  
+  &:after {
+      animation: complete1 1.8s ease-out; 
+      animation-fill-mode: forwards; 
+      background: #27ae60 ;
+      content: ' ';
+      position: absolute;
+      left: -18rem;
+      top: -0.05rem;
+      width: 18rem;
+      height: 6.1rem;
+    }
+    
+    &:before {
+      animation: complete2 0.4s ease-in; 
+      animation-delay: 2s;
+      animation-fill-mode: backwards; 
+      content: 'Sent';
+      position: relative;
+      z-index: 999;
+    }  
+}
+
+@keyframes complete1 {
+  0% {
+    left: -18rem;
+  }	
+  
+  100% {
+    left: 0;
+    content: ' Sent';
+  }
+}
+
+@keyframes complete2 {
+  0% {
+    opacity: 0;
+  }	
+  
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+

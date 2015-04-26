@@ -1,0 +1,100 @@
+/* registration form button */
+
+.submit {
+    background: #e8e8e8;
+    border: 0;
+    color: #565454;
+    font-size: 20px;
+    margin: 0em 4em 2em;
+    position: relative;
+    top: 1rem;
+    width: 18rem;
+}
+
+.submit:before {
+    content: 'Registe-se Grátis!';
+    position: relative;
+    z-index: 999;
+}
+
+.complete {
+    color: #fff;
+    overflow: hidden;
+    width: 288px;
+    width: 18rem;
+}
+
+.complete:after {
+    -webkit-animation: complete1 1.8s ease-out;
+    animation: complete1 1.8s ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    background: #27ae60;
+    content: ' ';
+    position: absolute;
+    left: -288px;
+    left: -18rem;
+    top: -0px;
+    top: -0.05rem;
+    width: 288px;
+    width: 18rem;
+    height: 97px;
+    height: 6.1rem;
+}
+
+.complete:before {
+    -webkit-animation: complete2 0.4s ease-in;
+    animation: complete2 0.4s ease-in;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    content: 'Ganhou 20,00€ de desconto!';
+    position: relative;
+    z-index: 999;
+}
+
+@-webkit-keyframes complete1 {
+    0% {
+        left: -18rem;
+    }
+    100% {
+        left: 0;
+        content: ' Sent';
+    }
+}
+
+@keyframes complete1 {
+    0% {
+        left: -18rem;
+    }
+    100% {
+        left: 0;
+        content: ' Sent';
+    }
+}
+
+@-webkit-keyframes complete2 {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    c
+}
+
+@keyframes complete2 {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
